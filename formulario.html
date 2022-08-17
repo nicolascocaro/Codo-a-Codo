@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Clase 4 - HTML: Formulario</title>
+</head>
+<body>
+    <h1>Clase 4</h1>
+    <form
+        action="index.html"
+        method="get"><!--action es a donde redirige el formulario-->
+        <label>Usuario</label>
+        <input type="text" name="Usuario">
+        <br/>
+        <label>Password</label>
+        <input type="password" name="Contraseña">
+        <br/>
+        <label>Edad:</label>
+        <select name="edad"><!--despliega opciones-->
+            <option value="18_25">18 - 25</option>
+            <option value="26_36">26 - 36</option>
+        </select><!--el value afecta a la URL-->
+        <br/>
+        <label>Fecha de nacimiento</label>
+        <input type="date" name="fechanacimiento">
+        <input type="submit" value="Enviar">
+    </form>
+</body>
+</html>
