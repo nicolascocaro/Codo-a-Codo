@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fieldset</title>
+    <style>
+        a {
+            color:red;
+            text-decoration: none;
+        }
+        ul {
+            list-style: circle;
+        }
+        /*herencia*/
+        .link li a {
+            color:green;
+        }
+        .textocolor {
+            color:blue;
+        }
+        #textocolor {
+            color:purple;
+        }
+        .textocolorimportant {
+            color:aqua !important;
+        }
+        [href] {
+            background-color: blueviolet;
+            text-decoration: line-through;
+        }
+        [href$="3"] {
+            text-decoration: underline;
+        }
+        [id="galeria"] {
+            background-color: red;
+        }
+        /*comience con*/
+        [id^="re"] {
+            background-color: burlywood;
+        }
+        /*contenga*/
+        [id*="ale"] {
+            font-size: 8px;
+            color:blue;
+            padding: 15px;
+        }
+        /*termine con*/
+        [id$="s"] {
+            background-color: black;
+            color: white;
+        }
+/*important > inline > id > class*/
+    </style>
+</head>
+<body>
+    <main>
+        <section>
+            <header>
+                <nav>
+                    <ul class="link">
+                        <li>
+                            <a href="#nosotros">Link 1</a>
+                        </li>
+                        <li>
+                            <a href="link2">Link 2</a>
+                        </li>
+                        <li>
+                            <a href="link3">Link 3</a>
+                        </li>
+                    </ul>
+                </nav>
+            </header>
+        </section>
+        <section>
+            <p style="color: red"
+            class="textocolor textocolorimportant"
+            id="#textocolor">Parrafo</p>
+        </section>
+        <section>
+        <fieldset>
+            <legend>Oficiales</legend>
+            <form method="POST">
+            <input type="file" name="archivo">
+            <button>Enviar</button>
+            </form>
+        </fieldset>
+        </section>
+        <section id="nosotros">
+            <h3>Nosotros</h3>
+            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Officiis, repellat! Minus, recusandae, quasi quis quia quod quos, nulla officia delectus a porro rerum molestias numquam fugiat soluta repudiandae magnam est?</p>
+        </section>
+        <section id="contacto">
+            <h3>Contacto</h3>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ducimus aliquid, beatae enim vero recusandae fuga mollitia perferendis architecto blanditiis dicta aperiam voluptatem, nisi cupiditate nesciunt impedit minima laborum reprehenderit est.</p>
+        </section>
+        <section id="galeria">
+            <h3>Galeria</h3>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nemo, unde eos! Libero totam facilis eligendi voluptas, earum eius soluta hic officiis illo et eaque odit, quaerat rem. Fugit, animi ipsa.</p>
+        </section>
+        <section id="regaleria">
+            <h3>Regaleria</h3>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Rerum sequi adipisci est optio, odit cumque veniam cum quos minima ab? Consequatur ipsam reprehenderit nostrum voluptatem voluptate, amet ab totam architecto.</p>
+        </section>
+    </main>
+</body>
+</html>
