@@ -24,18 +24,6 @@
     background-color: aqua;
 }
 
-/*media query: me sirve para cambiar los estilos cuando cambia la resolucion*/
-@media screen and (max-width:600px) {
-    .container-flex {
-        flex-direction: column;
-        background-color: blueviolet;
-    }
-    .container-item {
-        font-size: 2em;
-        color:blue
-    }
-}
-
 section {
     height: 650px;
     /* border: 1px solid blue; */
@@ -43,6 +31,7 @@ section {
     display:flex;
     padding:10px;
     align-items:center;
+    justify-content: center;
 }
 
 section img {
@@ -79,4 +68,55 @@ section:first-child {
 /*html:*/
 html {
     scroll-behavior: smooth;
+}
+.menu-container {
+    background-color: cadetblue;
+    display: flex;
+    padding: 20px;
+    justify-content: space-between;
+    height: 50px;
+    position: sticky;
+    top: 0;
+}
+.menu-container ul li {
+    display: inline-block;
+}
+.menu-container a {
+    text-decoration: none;
+}
+.menu-container a:hover {
+    font-size: 1,2em;
+}
+.header img {
+    height:650px;
+}
+.content-text a {
+    display:inline-block;
+    width: 100px;
+    height: 45px;
+    border-radius: 20px;
+    line-height: 45px;
+    background: white;
+    font-size: 1.1em;
+    text-decoration: none;
+    font-weight: bolder;
+    font-family: fantasy;
+    color: black;
+    text-align: center;
+}
+.content-text a:hover {
+    border: 1px solid blue;
+}
+
+/*media query: me sirve para cambiar los estilos cuando cambia la resolucion*/
+@media screen and (max-width:1000px) {
+    section {
+        flex-direction: column;
+    }
+    section img {
+        width:35%;
+    }
+    .content-text {
+        text-align: center;
+    }
 }
