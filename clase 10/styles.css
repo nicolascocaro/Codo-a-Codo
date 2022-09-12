@@ -3,17 +3,17 @@
     padding: 0px;
     box-sizing: border-box;
 }
-/*flexbox*/
+/*flexbox
 .container-flex {
-    flex-direction: row-reverse; /*row|column*/
+    flex-direction: row-reverse; /*row|column
     border: 1px solid red;
     display: flex;
     background-color: beige;
     justify-content: space-evenly; /*alinea el contenido */
     /* height: 400px; */
     /* align-items: flex-start; */
-    /* width: 50%; */
-    flex-wrap: wrap; /*nowrap*/
+    /* width: 50%; 
+    flex-wrap: wrap; /*nowrap
 
 }
 
@@ -22,7 +22,7 @@
     height: 50px;
     border: 2px solid yellow;
     background-color: aqua;
-}
+} */
 
 section {
     height: 650px;
